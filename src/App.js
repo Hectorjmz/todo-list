@@ -47,8 +47,8 @@ function App() {
       <div className="App">
       <Container>
         {todos.map((todo, i) => 
-        <Todo className='stuff' index={i} key={i} todo={todo} remove={removeTodo} />)}
-        <TodoForm className='stuff' addTodo={addTodo} />
+        <Todo index={i} key={i} todo={todo} remove={removeTodo} />)}
+        <TodoForm addTodo={addTodo} />
         <img src={postIt} className="position-absolute top-0 start-0" alt="logo" />
       </Container>
       </div>
